@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="w-full">
       <Hero />
-      <AboutMe />
+      {/* <AboutMe /> */}
     </div>
   )
 }
