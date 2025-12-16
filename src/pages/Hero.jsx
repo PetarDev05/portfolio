@@ -3,11 +3,13 @@ import HeroHeart from "../components/HeroHeart.jsx"
 
 const Hero = () => {
   return (
-    <div className="w-full flex items-center justify-center h-screen bg-linear-to-b from-(--dark-blue)/50 to-(--white)">
+    <div className="w-full flex items-center justify-center h-screen bg-(--dark-bg)">
       <Header />
       <HeroHeart />
     </div>
   )
 }
+
+// bg-linear-to-b from-(--light-blue)/50 to-(--light-red)
 
 export default Hero
