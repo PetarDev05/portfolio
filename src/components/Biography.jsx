@@ -1,10 +1,9 @@
 
 const Biography = () => {
   return (
-    <div className="w-200 flex flex-row items-center gap-10">
-      <div className="min-w-75 min-h-75 bg-(--black) rounded-lg"></div>
-      <div className="flex flex-col items-start justify-evenly gap-5">
-        <p className="">
+    <div className="md:w-150 flex flex-row items-center gap-10">
+      <div className="flex flex-col items-start justify-evenly gap-8">
+        <p className="text-(--text-light) dark:text-(--text-dark)">
           I am Petar, a full-stack web developer focused on building modern, 
           functional, and user-friendly websites. I specialize in MERN stack 
           (MongoDB, Express, Node, React), delivering clean and efficient 
@@ -16,6 +15,7 @@ const Biography = () => {
           If you are looking for reliable and scalable website, 
           feel free to get in touch and we can discuss the best solution for your project.
         </p>
+        <button className="px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer">Contact me</button>
       </div>
     </div>
   )
