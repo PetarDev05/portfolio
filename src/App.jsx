@@ -1,5 +1,5 @@
-import Hero from "./pages/Hero.jsx"
-import AboutMe from "./pages/AboutMe.jsx"
+import Hero from "./pages/Hero.jsx";
+import AboutMe from "./pages/AboutMe.jsx";
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
       <Hero />
       {/* <AboutMe /> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
