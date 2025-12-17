@@ -31,6 +31,16 @@
 
     --card-light: #ecefff;
     --card-dark: #070051;
+
+    --pr1: #e1f5ff;
+    --pr2: #ffffff;
+    --prm1: #75caff;
+    --prm2: #ffffff;
+
+    --pr-dark-1: #d8f2ff;
+    --pr-dark-2: #b8bfff;
+    --prm-dark-1: #070051;
+    --prm-dark-2: #3a5efe;
 }
 
 @theme {
@@ -39,9 +49,19 @@
 }
 
 @theme {
-  --shadow-inner-sm: 0 0px 25px 7px var(--dark-blue),
+  --shadow-inner-sm: 0px 0px 25px 7px var(--dark-blue),
     inset 0 0 25px 7px var(--blue);
 }
+
+@theme {
+  --shadow-outher-sm: 0 0px 25px 7px var(--blue)
+}
+
+@theme {
+  --shadow-outher-sm-dark: 0 0px 25px 7px var(--dark-blue)
+}
+
+
 
 * {
     font-family: "Poppins";

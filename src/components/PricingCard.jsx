@@ -1,0 +1,18 @@
+import { MdOutlineHexagon } from "react-icons/md";
+
+const PricingCard = ({option}) => {
+  return (
+    <div className={`p-7 rounded-2xl  ${option.id === "002" ? "bg-linear-to-br from-(--prm1) to-(--prm2) dark:from-(--prm-dark-1) dark:to-(--prm-dark-2) shadow-outher-sm dark:shadow-outher-sm-dark" : "bg-(--pr1) dark:bg-(--card-dark) shadow-[0px_0px_15px_1px_var(--white)]"}  flex flex-col items-start gap-3`}>
+      <h3 className="text-2xl font-semibold text-(--text) dark:text-(--white)">{option.title}</h3>
+      <p className="text-(--text-light) dark:text-(--text-dark)">{option.tagline}</p>
+      <p className="font-semibold text-2xl text-(--text) dark:text-(--white)">${option.price}</p>
+      <div className="flex flex-col items-start gap-3">
+        {option.description.map((point, index) => (
+          <span key={index} className="flex items-start text-(--text-light) dark:text-(--text-dark)">- {point}</span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default PricingCard
