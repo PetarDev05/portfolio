@@ -12,7 +12,8 @@
     --text-light: #757575;
     --text-dark: #bcbcbc;
     --dark-bg: #04002e;
-    --super: #d3dcff;
+    --super: #edf1ff;
+    --form-field-dark: #2b2296;
 
     --node: #50c250;
     --react: #58d8ff;
@@ -35,6 +36,11 @@
 @theme {
   --shadow-inner-md: 0 0px 40px 10px var(--dark-blue),
     inset 0 0 40px 10px var(--blue);
+}
+
+@theme {
+  --shadow-inner-sm: 0 0px 25px 7px var(--dark-blue),
+    inset 0 0 25px 7px var(--blue);
 }
 
 * {

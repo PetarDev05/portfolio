@@ -2,6 +2,7 @@ import Hero from "./pages/Hero.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
 import Projects from "./pages/Projects.jsx";
 import TechStack from "./pages/TechStack.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <AboutMe />
       <Projects />
       <TechStack />
+      <Contact />
     </div>
   );
 };

@@ -16,7 +16,7 @@ import { SiAxios } from "react-icons/si";
 const TechStack = () => {
   
 
-  return <div className="w-full flex flex-col items-center gap-20 p-10 bg-(--white) dark:bg-(--dark-bg)">
+  return <div className="w-full h-fit flex flex-col items-center gap-20 px-10 pb-30 pt-20 bg-(--white) dark:bg-(--dark-bg)">
     <h2 className="text-4xl text-(--text) dark:text-(--white)">Technologies I use</h2>
     <div className="relative w-60 h-60 min-[500px]:w-75 min-[500px]:h-75 md:w-120 md:h-120 flex items-center justify-center p-20">
 
