@@ -12,6 +12,20 @@
     --text-light: #757575;
     --text-dark: #bcbcbc;
     --dark-bg: #04002e;
+
+    --node: #50c250;
+    --react: #58d8ff;
+    --js: #fffc31;
+    --html: #e35b00;
+    --axios: #a325fd;
+    --mongo: #348e48;
+    --npm: #c02c2c;
+    --mongoose: #b00f00;
+    --git: #f85050;
+    --router: #b91919;
+    --ex: #8e8e8e;
+    --tailwind: #37a2ff;
+    --jwt: #ff61f7;
 }
 
 @theme {

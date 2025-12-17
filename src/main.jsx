@@ -8,6 +8,6 @@ createRoot(document.getElementById('root')).render(
   <ContextProvider>
     <StrictMode>
       <App />
-    </StrictMode>,
+    </StrictMode>
   </ContextProvider>
 )
