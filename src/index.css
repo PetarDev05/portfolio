@@ -12,6 +12,7 @@
     --text-light: #757575;
     --text-dark: #bcbcbc;
     --dark-bg: #04002e;
+    --super: #d3dcff;
 
     --node: #50c250;
     --react: #58d8ff;
@@ -26,6 +27,9 @@
     --ex: #8e8e8e;
     --tailwind: #37a2ff;
     --jwt: #ff61f7;
+
+    --card-light: #ecefff;
+    --card-dark: #070051;
 }
 
 @theme {

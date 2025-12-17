@@ -3,7 +3,7 @@ import HeroHeart from "../components/HeroHeart.jsx"
 
 const Hero = () => {
   return (
-    <div className="w-full flex items-center justify-center h-screen bg-(--white) dark:bg-(--dark-bg)">
+    <div className="w-full flex items-center justify-center h-screen bg-(--super) dark:bg-(--dark-bg)">
       <Header />
       <HeroHeart />
     </div>

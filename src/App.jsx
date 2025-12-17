@@ -1,5 +1,6 @@
 import Hero from "./pages/Hero.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
+import Projects from "./pages/Projects.jsx";
 import TechStack from "./pages/TechStack.jsx";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div className="w-full">
       <Hero />
       <AboutMe />
+      <Projects />
       <TechStack />
     </div>
   );
