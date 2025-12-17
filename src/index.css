@@ -41,6 +41,8 @@
     --pr-dark-2: #b8bfff;
     --prm-dark-1: #070051;
     --prm-dark-2: #3a5efe;
+
+    --shadow-light: #d0d0d0;
 }
 
 @theme {

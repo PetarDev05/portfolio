@@ -15,6 +15,12 @@ const ContactForm = () => {
           placeholder="Enter email"
           name="name"
         />
+        <select name="" id="" className="px-3 py-2 bg-(--super) w-full dark:bg-(--card-dark) dark:text-(--white) rounded-lg">
+          <option value="" className="">Chose project type</option>
+          <option value="" className="">Starter - Landing page</option>
+          <option value="" className="">Bussiness - Website</option>
+          <option value="" className="">Profesionall - Full stack application</option>
+        </select>
         <textarea
           name="message"
           id=""

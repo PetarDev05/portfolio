@@ -4,6 +4,7 @@ import Projects from "./pages/Projects.jsx";
 import TechStack from "./pages/TechStack.jsx";
 import Contact from "./pages/Contact.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <TechStack />
       <Pricing />
       <Contact />
+      <Footer/>
     </div>
   );
 };

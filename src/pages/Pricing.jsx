@@ -66,7 +66,7 @@ const Pricing = () => {
         Simple and transparent pricing designed to offer professional web
         solutions, from clean landing pages to fully custom web applications.
       </p>
-      <div className="grid grid-cols-1 gap-15 min-[1200px]:grid-cols-3">
+      <div className="grid grid-cols-1 gap-15 min-[1300px]:grid-cols-3">
         {plans.map((plan) => (
           <PricingCard key={plan.id} option={plan} />
         ))}
