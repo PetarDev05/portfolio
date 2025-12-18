@@ -3,7 +3,7 @@ const Biography = () => {
   return (
     <div className="md:w-150 flex flex-row items-center gap-10">
       <div className="flex flex-col items-start justify-evenly gap-8">
-        <p className="text-(--text-light) dark:text-(--text-dark)">
+        <p className="text-(--text-dark)">
           I am Petar, a full-stack web developer focused on building modern, 
           functional, and user-friendly websites. I specialize in MERN stack 
           (MongoDB, Express, Node, React), delivering clean and efficient 
@@ -15,7 +15,7 @@ const Biography = () => {
           If you are looking for reliable and scalable website, 
           feel free to get in touch and we can discuss the best solution for your project.
         </p>
-        <button className="px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer">Contact me</button>
+        <a href="#contact" className="px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer">Contact me</a>
       </div>
     </div>
   )

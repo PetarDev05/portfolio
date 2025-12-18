@@ -23,8 +23,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-10 p-10 bg-(--white) dark:bg-(--dark-bg)">
-      <h2 className="text-4xl text-(--text) dark:text-(--white)">
+    <div id="projects" className="w-full flex flex-col items-center justify-center gap-10 p-10 bg-(--dark-bg)">
+      <h2 className="text-4xl text-(--white)">
         Here are some of my projects
       </h2>
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-10 p-5">
