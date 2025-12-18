@@ -58,11 +58,11 @@ const Pricing = () => {
 
 
   return (
-    <div id="pricing" className="w-full p-5 flex flex-col items-center gap-15 bg-(--dark-bg)">
-      <h2 className="text-4xl text-(--white)">
+    <div id="pricing" className="w-full min-h-screen p-5 flex flex-col items-center gap-10 bg-(--dark-bg) sm:pt-30">
+      <h2 className="text-4xl sm:text-5xl text-(--white)">
         Pricing options
       </h2>
-      <p className="text-(--text-dark) text-center px-20">
+      <p className="text-(--text-dark) text-center md:px-20">
         Simple and transparent pricing designed to offer professional web
         solutions, from clean landing pages to fully custom web applications.
       </p>

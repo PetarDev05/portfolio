@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="w-full min-h-screen flex flex-col items-center justify-center gap-15 p-5 bg-(--dark-bg) max-[500px]:pt-20">
-      <h2 className="text-4xl sm:text-5xl text-(--white)">
+      <h2 className="text-4xl sm:text-5xl text-(--white) text-center">
         Here are some of my projects
       </h2>
       <div className="w-fit grid grid-cols-1 lg:grid-cols-3 gap-10">
