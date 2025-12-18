@@ -46,6 +46,14 @@
 
     --switch-light: #ecefff;
     --switch-dark: #070051;
+
+    --organic: #4abb8c;
+    --organic-light: #b0ffdf;
+
+    --foodly: #fd6e54;
+
+    --calculator: #ff962d;
+  --calc-text: #1d1d1d;
 }
 
 @theme {

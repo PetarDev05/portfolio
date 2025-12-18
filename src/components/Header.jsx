@@ -6,7 +6,7 @@ const Header = () => {
   const { toggleMenu } = useContextHook();
 
   return (
-    <div className="fixed top-0 left-0 right-0 w-full flex flex-row items-center justify-end p-5 pr-10 bg-(--dark-bg) z-20">
+    <div className="fixed top-0 left-0 right-0 w-full flex flex-row items-center justify-end p-5 bg-(--dark-bg) z-20">
       <div className="sm:flex flex-row items-center gap-5 hidden  text-(--white)">
         <a
           href="#about"

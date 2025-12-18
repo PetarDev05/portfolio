@@ -2,13 +2,15 @@ import { TbExternalLink } from "react-icons/tb";
 const ProjectCard = ({ project }) => {
 
   return (
-    <div className="flex-1 p-5 bg-(--card-dark) rounded-lg flex flex-col items-start justify-between gap-5 sa">
-      <h3 className="text-2xl text-(--white)">{project.title}</h3>
+    <div className="max-w-95 p-5 bg-(--card-dark) rounded-lg flex flex-col items-start justify-between gap-10 shadow-[0px_0px_10px_1px_var(--white)]">
+      <div className="w-50 overflow-hidden h-15 flex items-center justify-center rounded-xl">
+        <img src={`${project.img}`} alt="" className="" />
+      </div>
       <p className="text-(--text-dark)">{project.description}</p>
-      <button className="px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer flex items-center gap-2">
+      <a href="#" target="_blank" className="px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer flex items-center gap-2">
         Visit
         <TbExternalLink />
-      </button>
+      </a>
     </div>
   );
 };
