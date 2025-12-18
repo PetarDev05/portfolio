@@ -1,22 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Context } from "./Context";
 
 const ContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  const toggleMenu = () => {
+    setOpen(!open);
   };
 
-  const value = { theme, toggleTheme };
+  const value = { open, toggleMenu };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };

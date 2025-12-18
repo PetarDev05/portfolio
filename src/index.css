@@ -71,7 +71,11 @@
 }
 
 @theme {
-  --shadow-switch-dark: 0 0px 12px 3px var(--dark-blue)
+  --shadow-switch-dark: inset 0 0px 12px 3px var(--dark-blue)
+}
+
+@theme {
+  --shadow-menu-link: inset 0 0 10px 2px var(--dark-blue);
 }
 
 html {
