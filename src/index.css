@@ -13,19 +13,15 @@
     --super: #edf1ff;
     --form-field-dark: #2b2296;
 
-    --node: #50c250;
-    --react: #58d8ff;
-    --js: #fffc31;
-    --html: #e35b00;
-    --axios: #a325fd;
-    --mongo: #348e48;
-    --npm: #c02c2c;
-    --mongoose: #b00f00;
-    --git: #f85050;
-    --router: #b91919;
-    --ex: #8e8e8e;
-    --tailwind: #37a2ff;
-    --jwt: #ff61f7;
+  --js: #f7e58d;
+  --node: #14e645;
+  --react: #8fe6ff;
+  --express: #ffffff;
+  --mongodb: #2bf371;
+  --git: #e3876d;
+  --tailwind: #8dd6e8;
+  --html: #f5a28a;
+  --vite: #edc2ff;
 
     --card-light: #ecefff;
     --card-dark: #070051;

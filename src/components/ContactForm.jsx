@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import useContextHook from "../hooks/useContext.jsx";
+import { motion } from "motion/react";
 
 const ContactForm = () => {
   const { notify } = useContextHook();
@@ -48,7 +49,11 @@ const ContactForm = () => {
   };
 
   return (
-    <form
+    <motion.form
+      initial={{opacity: 0}}
+      whileInView={{ opacity: 1 }}
+      viewport={{once: 1, amount: 0.5}}
+      transition={{ duration: 1, ease: "easeOut" }}
       onSubmit={sendEmail}
       className="w-full sm:w-150 flex flex-col items-center gap-10 shadow-inner-sm sm:shadow-inner-md rounded-[20px] sm:rounded-[30px] p-7 sm:p-15"
     >
@@ -106,10 +111,13 @@ const ContactForm = () => {
     focus:ring-1 focus:ring-(--blue)"
         placeholder="Type your message here . . ."
       ></textarea>
-      <button type="submit" className="w-full px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer">
+      <button
+        type="submit"
+        className="w-full px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer"
+      >
         Send
       </button>
-    </form>
+    </motion.form>
   );
 };
 

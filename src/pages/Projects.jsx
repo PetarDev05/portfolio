@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard.jsx";
+import { motion } from "motion/react";
 
 const Projects = () => {
   const projectsArray = [
@@ -25,16 +26,24 @@ const Projects = () => {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 0},
+    visible: { opacity: 1, transition: { staggerChildren: 0.5 } },
+  };
+
   return (
-    <div id="projects" className="w-full min-h-screen flex flex-col items-center justify-center gap-15 p-5 bg-(--dark-bg) max-[500px]:pt-20">
+    <div
+      id="projects"
+      className="w-full min-h-screen flex flex-col items-center justify-center gap-15 p-5 bg-(--dark-bg) max-[500px]:pt-20 overflow-x-hidden"
+    >
       <h2 className="text-4xl sm:text-5xl text-(--white) text-center">
         Here are some of my projects
       </h2>
-      <div className="w-fit grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <motion.div variants={container} viewport={{ once: true, amount: 0.3 }} initial="hidden" whileInView="visible" className="w-fit grid grid-cols-1 lg:grid-cols-3 gap-10">
         {projectsArray.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

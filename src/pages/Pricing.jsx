@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import PricingCard from "../components/PricingCard.jsx";
 
 const Pricing = () => {
@@ -37,6 +38,11 @@ const Pricing = () => {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+  };
+
   return (
     <div
       id="pricing"
@@ -47,11 +53,11 @@ const Pricing = () => {
         Simple and transparent pricing designed to offer professional web
         solutions, from clean landing pages to fully custom websites.
       </p>
-      <div className="grid grid-cols-1 gap-15 min-[1300px]:grid-cols-2 pt-5">
+      <motion.div variants={container} viewport={{ once: true, amount: 0.7 }} initial="hidden" whileInView="visible" className="grid grid-cols-1 gap-15 min-[1300px]:grid-cols-2 pt-5">
         {plans.map((plan) => (
           <PricingCard key={plan.id} option={plan} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

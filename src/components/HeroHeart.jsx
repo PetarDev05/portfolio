@@ -1,7 +1,16 @@
+import { motion } from "motion/react";
+
 const HeroHeart = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-10 lg:gap-20 justify-between p-10 sm:p-15 lg:p-20 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] sm:rounded-tr-[100px] sm:rounded-bl-[100px]  lg:rounded-tl-[45px] lg:rounded-br-[45px] lg:rounded-tr-[150px] lg:rounded-bl-[150px] bg-(--dark-bg) shadow-inner-sm-hero sm:shadow-inner-md">
-      <img
+    <motion.div
+      className="flex flex-col sm:flex-row items-center gap-10 lg:gap-20 justify-between p-10 sm:p-15 lg:p-20 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] sm:rounded-tr-[100px] sm:rounded-bl-[100px] lg:rounded-tl-[45px] lg:rounded-br-[45px] lg:rounded-tr-[150px] lg:rounded-bl-[150px] bg-(--dark-bg) shadow-inner-sm-hero sm:shadow-inner-md"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
+      <motion.img
+        whileHover={{ scale: 1.03 }}
+        transition={{ duration: 0.2 }}
         src="user.png"
         alt=""
         className="w-45 min-[450px]:w-55 lg:w-75 rounded-full"
@@ -13,7 +22,7 @@ const HeroHeart = () => {
         </h2>
         <p className="text-xl lg:text-xl text-(--white)">a web developer</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

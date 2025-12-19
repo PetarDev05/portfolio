@@ -1,40 +1,53 @@
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { BiLogoMongodb } from "react-icons/bi";
-import { SiJsonwebtokens } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaGitAlt } from "react-icons/fa";
-import { FaNpm } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { SiReactrouter } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa";
-import { SiVite } from "react-icons/si";
-import { SiMongoose } from "react-icons/si";
-import { SiAxios } from "react-icons/si";
+import { motion } from "motion/react";
+
+import {
+  JavaScript,
+  NodeJs,
+  ExpressJsLight,
+  React,
+  MongoDB,
+  TailwindCSS,
+  Git,
+  HTML5,
+  ViteJS,
+} from "developer-icons";
 
 const TechStack = () => {
-  
-
-  return <div className="w-full min-h-screen flex flex-col items-center gap-30 pt-30 bg-(--dark-bg)">
-    <h2 className="text-4xl sm:text-5xl text-(--white) px-5 text-center">Technologies I use</h2>
-    <div className="relative w-60 h-60 min-[500px]:w-75 min-[500px]:h-75 sm:w-85 sm:h-85 md:w-120 md:h-120 flex items-center justify-center p-20">
-
-      <FaHtml5 className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-0 left-1/2 text-(--html)"/>
-      <SiExpress className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-1/12 left-3/4 text-(--ex)"/>
-      <FaReact className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-3/4 left-11/12 text-(--react)"/>
-      <BiLogoMongodb className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-1/2 left-full text-(--mongo)"/>
-      <SiJsonwebtokens className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl  top-1/4 left-11/12 text-(--jwt)"/>
-      <RiTailwindCssFill className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl  top-11/12 left-1/4 text-(--tailwind)"/>
-      <FaGitAlt className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-full left-1/2 text-(--git) "/>
-      <FaNpm className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-11/12 left-3/4 text-(--npm)" />
-      <SiJavascript className="text-6xl md:text-9xl text-(--js) shadow"/>
-      <SiReactrouter className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-3/4 left-1/12 text-(--router)"/>
-      <FaNodeJs className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl  top-1/2 left-0 text-(--node)"/>
-      <SiAxios className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-1/12 left-1/4 text-(--axios)"/>
-      <SiMongoose className="absolute -translate-1/2 min-[500px]:text-5xl text-4xl sm:text-6xl md:text-7xl top-1/4 left-1/12 text-(--mongoose)"/>
+  return (
+    <div className="w-full min-h-screen flex flex-col items-center gap-30 pt-30 bg-(--dark-bg)">
+      <h2 className="text-4xl sm:text-5xl text-(--white) px-5 text-center">
+        Technologies I use
+      </h2>
+      <motion.div
+        initial={{ scale: 0.7 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="relative w-60 h-60 min-[500px]:w-75 min-[500px]:h-75 sm:w-85 sm:h-85 md:w-120 md:h-120 flex items-center justify-center p-20 "
+      >
+        <HTML5 className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--html)] lg:w-25 -translate-1/2 top-0 left-1/2 " />
+        <ExpressJsLight className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--express)] lg:w-25 -translate-1/2 top-1/8 left-7/8 " />
+        <React
+          className="absolute w-14 sm:w-16 md:w-20 lg:w-25 -translate-1/2 top-7/8 left-7/8 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--react)]"
+        />
+        <MongoDB className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--mongodb)] lg:w-25 -translate-1/2 top-1/2 left-full " />
+        <TailwindCSS className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--tailwind)] lg:w-25 -translate-1/2  top-7/8 left-1/8 " />
+        <Git className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--git)] lg:w-25 -translate-1/2 top-full left-1/2 " />
+        <JavaScript size={120} className="transition-all duration-200
+             drop-shadow-[0_0_25px_var(--js)]" />
+        <NodeJs className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_30px_var(--node)] lg:w-25 -translate-1/2  top-1/2 left-0 " />
+        <ViteJS className="absolute w-14 sm:w-16 md:w-20 transition-all duration-200
+             drop-shadow-[0_0_25px_var(--vite)] lg:w-25 -translate-1/2 top-1/8 left-1/8 " />
+      </motion.div>
     </div>
-  </div>;
+  );
 };
 
 export default TechStack;

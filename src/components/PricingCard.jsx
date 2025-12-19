@@ -1,6 +1,14 @@
+import { motion } from "motion/react";
+
 const PricingCard = ({ option }) => {
+  const item = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div
+    <motion.div
+    variants={item}
       className={`sm:p-7 p-4 rounded-2xl bg-linear-to-br shadow-outher-sm-blue from-(--pricing-card-1) to-(--pricing-card-2) flex flex-col items-start gap-3`}
     >
       <h3 className="text-2xl font-semibold text-(--white)">{option.title}</h3>
@@ -13,7 +21,7 @@ const PricingCard = ({ option }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
