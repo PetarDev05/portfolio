@@ -2,71 +2,52 @@ import PricingCard from "../components/PricingCard.jsx";
 
 const Pricing = () => {
   const plans = [
-  {
-    id: "001",
-    title: "Starter",
-    tagline: "A clean and modern landing page",
-    price: 150,
-    color1: "--pricing11",
-    color2: "--pricing12",
-    description: [
-      "One fully responsive landing page",
-      "Custom design tailored to your brand",
-      "Clear content structure and call-to-action",
-      "Contact form integration",
-      "Performance and basic SEO optimization",
-      "Deployment and setup",
-      "7 days of post-launch support",
-    ],
-  },
-  {
-    id: "002",
-    title: "Bussiness",
-    tagline: "A complete multi-page business website",
-    price: 350,
-    color1: "--pricing-main1",
-    color2: "--pricing-main2",
-    description: [
-      "Professional website with multiple pages",
-      "Modern and user-friendly design",
-      "Mobile, tablet, and desktop optimization",
-      "Structured content and smooth navigation",
-      "Contact form and essential integrations",
-      "Basic SEO optimization",
-      "Deployment and domain connection",
-      "14 days of post-launch support",
-    ],
-  },
-  {
-    id: "003",
-    title: "Profesional",
-    tagline: "A custom and advanced web application",
-    price: 650,
-    color1: "--pricing11",
-    color2: "--pricing12",
-    description: [
-      "Fully custom web application",
-      "Dynamic content and user interactions",
-      "User authentication and protected areas",
-      "Admin or management functionality",
-      "Scalable architecture for future growth",
-      "Full deployment and configuration",
-      "30 days of post-launch support",
-    ],
-  },
-];
-
+    {
+      id: "001",
+      title: "Starter",
+      tagline: "A clean and modern landing page",
+      price: 150,
+      color1: "--pricing11",
+      color2: "--pricing12",
+      description: [
+        "One fully responsive landing page",
+        "Custom design tailored to your brand",
+        "Clear content structure and call-to-action",
+        "Contact form integration",
+        "Fast-loading page with basic SEO setup",
+        "Deployment and setup",
+      ],
+    },
+    {
+      id: "002",
+      title: "Bussiness",
+      tagline: "A complete multi-page business website",
+      price: 350,
+      color1: "--pricing-main1",
+      color2: "--pricing-main2",
+      description: [
+        "Professional website with multiple pages",
+        "Modern and user-friendly design",
+        "Mobile, tablet, and desktop optimization",
+        "Well-organized pages and intuitive navigation",
+        "Contact form and essential integrations",
+        "SEO-ready structure",
+        "Deployment and domain connection",
+      ],
+    },
+  ];
 
   return (
-    <div id="pricing" className="w-full min-h-screen p-5 flex flex-col items-center gap-10 bg-(--dark-bg) sm:pt-30">
-      <h2 className="text-4xl sm:text-5xl text-(--white)">
-        Pricing options
-      </h2>
+    <div
+      id="pricing"
+      className="w-full min-h-screen p-5 flex flex-col items-center gap-10 bg-(--dark-bg) sm:pt-30"
+    >
+      <h2 className="text-4xl sm:text-5xl text-(--white)">Pricing options</h2>
       <p className="text-(--text-dark) text-center md:px-20">
         Simple and transparent pricing designed to offer professional web
-        solutions, from clean landing pages to fully custom web applications.
+        solutions, from clean landing pages to fully custom websites.
       </p>
-      <div className="grid grid-cols-1 gap-15 min-[1300px]:grid-cols-3">
+      <div className="grid grid-cols-1 gap-15 min-[1300px]:grid-cols-2 pt-5">
         {plans.map((plan) => (
           <PricingCard key={plan.id} option={plan} />
         ))}

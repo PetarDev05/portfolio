@@ -94,9 +94,6 @@ const ContactForm = () => {
         <option value="Bussiness - Website" className="">
           Bussiness - Website
         </option>
-        <option value="Profesionall - Full stack application" className="">
-          Profesionall - Full stack application
-        </option>
       </select>
       <textarea
         name="message"

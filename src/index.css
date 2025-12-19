@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 :root {
     --black: #000;
     --white: #fff;
@@ -32,28 +30,26 @@
     --card-light: #ecefff;
     --card-dark: #070051;
 
-    --pr1: #e1f5ff;
-    --pr2: #ffffff;
-    --prm1: #75caff;
-    --prm2: #ffffff;
 
-    --pr-dark-1: #d8f2ff;
-    --pr-dark-2: #b8bfff;
-    --prm-dark-1: #070051;
-    --prm-dark-2: #3a5efe;
+    --pricing-card-1: #070051;
+    --pricing-card-2: #3a5efe;
+
+    --pricing-card-3: #510700;
+    --pricing-card-4: #fe3a5e;
+
+    --pricing-card-5: #005107;
+    --pricing-card-6: #5efe3a;
+    --pricing-shadow-red: #ef2229;
+    --pricing-shadow-green: #29ef22;
+    --pricing-shadow-blue: #2229ef;
+
 
     --shadow-light: #d0d0d0;
 
     --switch-light: #ecefff;
     --switch-dark: #070051;
 
-    --organic: #4abb8c;
-    --organic-light: #b0ffdf;
 
-    --foodly: #fd6e54;
-
-    --calculator: #ff962d;
-  --calc-text: #1d1d1d;
 }
 
 @theme {
@@ -76,11 +72,7 @@
 }
 
 @theme {
-  --shadow-outher-sm-dark: 0 0px 25px 7px var(--dark-blue)
-}
-
-@theme {
-  --shadow-switch-light: 0 0px 12px 3px var(--blue)
+  --shadow-outher-sm-blue: 0 0px 25px 5px var(--pricing-shadow-blue)
 }
 
 @theme {
@@ -91,14 +83,11 @@
   --shadow-menu-link: inset 0 0 10px 2px var(--dark-blue);
 }
 
-html {
-  scroll-behavior: smooth;
-  background-color: var(--dark-bg);
-}
-
-
-
 * {
     font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: var(--dark-bg);
+}
