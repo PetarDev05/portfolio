@@ -62,7 +62,12 @@
 }
 
 @theme {
-  --shadow-inner-sm: 0px 0px 25px 7px var(--dark-blue),
+  --shadow-inner-sm: 0px 0px 15px 5px var(--dark-blue),
+    inset 0 0 15px 5px var(--blue);
+}
+
+@theme {
+  --shadow-inner-sm-hero: 0px 0px 25px 7px var(--dark-blue),
     inset 0 0 25px 7px var(--blue);
 }
 
@@ -88,7 +93,10 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--dark-bg);
 }
+
+
 
 * {
     font-family: "Poppins";

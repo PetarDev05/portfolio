@@ -1,6 +1,6 @@
 const HeroHeart = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-10 lg:gap-20 justify-between p-10 sm:p-15 lg:p-20 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] sm:rounded-tr-[100px] sm:rounded-bl-[100px]  lg:rounded-tl-[45px] lg:rounded-br-[45px] lg:rounded-tr-[150px] lg:rounded-bl-[150px] bg-(--dark-bg) shadow-inner-sm sm:shadow-inner-md">
+    <div className="flex flex-col sm:flex-row items-center gap-10 lg:gap-20 justify-between p-10 sm:p-15 lg:p-20 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] sm:rounded-tr-[100px] sm:rounded-bl-[100px]  lg:rounded-tl-[45px] lg:rounded-br-[45px] lg:rounded-tr-[150px] lg:rounded-bl-[150px] bg-(--dark-bg) shadow-inner-sm-hero sm:shadow-inner-md">
       <img
         src="user.png"
         alt=""

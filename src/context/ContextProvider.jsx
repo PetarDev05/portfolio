@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Context } from "./Context";
+import toast from "react-hot-toast";
 
 const ContextProvider = ({ children }) => {
   const [open, setOpen] = useState(false);
@@ -8,7 +9,9 @@ const ContextProvider = ({ children }) => {
     setOpen(!open);
   };
 
-  const value = { open, toggleMenu };
+  const notify = (message) => toast(message);
+
+  const value = { open, toggleMenu, notify };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };

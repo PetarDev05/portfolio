@@ -6,7 +6,7 @@ const Header = () => {
   const { toggleMenu } = useContextHook();
 
   return (
-    <div className="fixed top-0 left-0 right-0 w-full flex flex-row items-center justify-end p-5 bg-(--dark-bg) z-20">
+    <div className="fixed top-0 left-0 right-0 w-full flex flex-row items-center justify-end p-4 bg-(--dark-bg) z-20">
       <div className="sm:flex flex-row items-center gap-5 hidden  text-(--white)">
         <a
           href="#about"
@@ -33,10 +33,9 @@ const Header = () => {
           Contact
         </a>
       </div>
-      <RiMenu4Line
-        onClick={toggleMenu}
-        className="text-xl block sm:hidden text-(--white) z-20 cursor-pointer"
-      />
+      <button className="p-3 hover:shadow-switch-dark sm:hidden rounded-md cursor-pointer" onClick={toggleMenu}>
+        <RiMenu4Line className="text-xl text-(--white) z-20 " />
+      </button>
     </div>
   );
 };

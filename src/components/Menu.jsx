@@ -38,10 +38,12 @@ const Menu = () => {
       >
         Contact
       </a>
-      <IoCloseOutline
+      <button
+        className="p-3 hover:shadow-switch-dark sm:hidden rounded-md cursor-pointer"
         onClick={toggleMenu}
-        className="text-(--white) text-3xl cursor-pointer mt-5"
-      />
+      >
+        <IoCloseOutline className="text-2xl text-(--white) z-20 " />
+      </button>
     </div>
   );
 };
