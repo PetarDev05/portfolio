@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <p className="text-(--text-dark)">{project.description}</p>
       <a
-        href="#"
+        href={project.url}
         target="_blank"
         className="px-8 py-2 rounded-lg bg-(--dark-blue) text-white cursor-pointer flex items-center gap-2"
       >
